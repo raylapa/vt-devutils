@@ -14,11 +14,24 @@
    </head>
    <body>
       <div class="[{$box|default:'box'}]" style="[{if !$box && !$bottom_buttons}]height: 98%;[{/if}]">
-         <p>test</p>
-			<pre>
+         <h1>exception log</h1>
+         <pre>[{$ExceltionLog}]</pre>
 
-			[{$content|default:""}]
+         
+         <hr/>
+         <script type="text/javascript">
+            if (typeof jQuery == 'undefined') {
+               document.write('<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></' + 'script>');
+            }
+         </script>
+         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> [{* jQuery UI for datapickers and mCustomScrollbar *}]
+         <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script> [{* jQuery TOOLS for tooltip *}]
+         <script type="text/javascript">
+            $(document).ready(function() {
 
-			</pre>
+            });
+         </script> 
+
+
       </div>
       [{include file="bottomitem.tpl"}]
