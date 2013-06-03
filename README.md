@@ -1,12 +1,12 @@
 vt Dev Utils 2.0 for OXID eShop 4.7
 ===========
-new features:
+##new features:
 * new ui
 * no need to cange files manually due the module installation
 * full list of features here
 
 ##INSTALLATION
-copy the content of the "copy_this" folder into the shop root directory
+copy the content of the "**copy_this**" folder into the shop root directory
 **if you are uploading files via ftp, switch to the binary transfer mode**
 
 ### if you have access to the shell and a git client
