@@ -15,7 +15,7 @@ navigate into the modules/ directory and:
 
 
 ##LICENSE
-vt-devutils Module for OXID eShop 4.7
+vt-devutils Module for OXID eShop 4.7  
 Copyright (C) 2012-2013  Marat Bedoev
 
 This program is free software;
