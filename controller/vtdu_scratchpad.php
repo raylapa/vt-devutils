@@ -4,8 +4,14 @@ class vtdu_scratchpad extends oxAdminView {
 
 	protected $_tpl = 'vtdu_scratchpad.tpl';
 
+	public function init()
+	{
+		parent::init();
+		$GLOBALS["me"] = oxRegistry::getConfig()->getUser();
+
+	}
 	public function render() {
-		
+
 		
 		
 		parent::render();
@@ -13,6 +19,7 @@ class vtdu_scratchpad extends oxAdminView {
 	}
 
 	public function doTest() {
+		global $me;
 		
 		$cfg = oxRegistry::get("oxConfig");
 		$code = $cfg->getParameter("codeinput");
