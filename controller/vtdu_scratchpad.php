@@ -4,10 +4,14 @@ class vtdu_scratchpad extends oxAdminView {
 
 	protected $_tpl = 'vtdu_scratchpad.tpl';
 
-	public function render() {
-		
-		
-		
+	public function init()
+	{
+		parent::init();
+		$GLOBALS["me"] = oxRegistry::getConfig()->getUser();
+	}
+
+	public function render()
+	{
 		parent::render();
 		return $this->_tpl;
 	}
