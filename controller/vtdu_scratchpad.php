@@ -7,7 +7,8 @@ class vtdu_scratchpad extends oxAdminView {
 	public function init()
 	{
 		parent::init();
-		$GLOBALS["me"] = oxRegistry::getConfig()->getUser();
+		$GLOBALS["me"] = $user = oxRegistry::getConfig()->getUser();
+		$GLOBALS["order"] = array_shift($user->getOrders(1)->getArray());
 	}
 
 	public function render()
@@ -17,6 +18,7 @@ class vtdu_scratchpad extends oxAdminView {
 	}
 
 	public function doTest() {
+		global $me, $order;
 		
 		$cfg = oxRegistry::get("oxConfig");
 		$code = $cfg->getParameter("codeinput");
