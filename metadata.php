@@ -32,7 +32,7 @@
 			'oxmodule'      => 'vt-devutils/extend/oxmodule_vtdu',
 
 			/* backend */
-			'module_config' => 'vt-devutils/extend/module_config_vtdu',
+			'module_main'   => 'vt-devutils/extend/module_main_vtdu',
 			'navigation'    => 'vt-devutils/extend/navigation_vtdu',
 
 
